@@ -13,13 +13,36 @@
             <ul>
                 <li><a href="index.html">Inicio</a> </li>
                 <li><a href="pasteles.html">Nuestros pasteles</a></li>
-                <li class="active"><a href="formulario.html">Pedido de pasteles</a></li>
-                <li><a href="pasteleros.html">Conocenos</a></li>
+                <li class="active"><a href="formulario.html">Has tu pedido</a></li>
+                <li><a href="pasteleros.html">Pedidos</a></li>
             </ul>
         </header>
         <div>
             <h1 class="padding">Hacemos tu pastel a tu imaginación.</h1>
             <img src="./Img/Logo & headers/pastel-de-requeson-con-fresas_w1140.jpg" alt="pastel de muestra" class="center">
+        </div>
+        <div class="input">
+            <h3>Datos del pedido.</h3>
+            <form action="get">
+                <p>Nombre   <input type="text" placeholder="Introduzca su nombre." required> </p>
+                <p>Telefono <input type="text" maxlength="10" required placeholder="8112-xxxx"></p>
+                <p>Correo Electrónico  <input type="email" name=".com" id="email" required placeholder="xxxxx--@gmail.com"></p>
+                <p>Decripción del pastel <input type="text" placeholder="Que este bien rico xd"></p>
+                <p>Sabores:
+                <input type="checkbox" name="Chocolate" id="1">Chocolate
+                <input type="checkbox" name="Vainilla" id="2">Vainilla
+                <input type="checkbox" name="3 Leches" id="3">3 Leches
+                <input type="checkbox" name="Frutas" id="4">Frutas
+                <br>(Max. 3)
+                </p>
+                <p>Adornos</p>
+                <input type="radio" id="1" name="Adornos" value="1"> <label for="">Vela de cumpleaños chica</label><br>
+                <input type="radio" id="2" name="Adornos" value="2"> <label for="">Vela de cumpleaños mediana</label><br>
+                <input type="radio" id="3" name="Adornos" value="3"> <label for="">Vela de cumpleaños grande</label><br>
+                <input type="radio" id="4" name="Adornos" value="4"> <label for="">Vela de Cumplealso extra brillante</label><br>
+                <p>Fecha de Entrega  <input type="date"></p>
+                <a href="index.html"><button>Enviar Pedido</button></a>
+            </form>
         </div>
     </body>
 </html>
